@@ -18,9 +18,6 @@ export interface ICircularDraggableProgressBar {
   coins?: number
   isOverBudget?: boolean
   individualValue?: number
-  isCarbon?: boolean
-  singularText?: string
-  pluralText?: string
   handlerPanResponder?: (onMove: boolean) => void
   displayNumber?: number
 }

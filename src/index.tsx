@@ -19,11 +19,11 @@ import Svg, {
 
 import { ICircularDraggableProgressBar } from './types'
 
-let _circle: React.Component<
-  import('react-native-svg').SvgProps,
-  any,
-  any
-> | null
+let _circle:
+  | React.Component<import('react-native-svg').SvgProps, any, any>
+  | null
+  | { measure: any }
+
 let _iconPanResponder: PanResponderInstance
 
 export const CircularDraggableProgressBar = ({
@@ -32,7 +32,7 @@ export const CircularDraggableProgressBar = ({
   iconOutSideColor = '#152679',
   gradientColorFrom = '#6bfd99',
   gradientColorTo = '#43a813',
-  bgCircleColor = '#b6070e',
+  bgCircleColor = '#0c0a0a',
   draggable = true,
   text = 'Amount',
   max = 100,
@@ -105,6 +105,7 @@ export const CircularDraggableProgressBar = ({
   }
 
   const setCircleCenter = () => {
+    // @ts-ignore
     _circle?.measure((x = 0, y = 0, w = 0, h = 0, px = 0, py = 0) => {
       const halfOfContainer = getContainerWidth() / 2
       setCircleCenterX(px + halfOfContainer)
