@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "homepage": "https://github.com/abltcy/circular-draggable-progress-bar#readme",
-  "main": "src/index.tsx",
-  "types": "src/index.d.ts",
+  "main": "lib/index.tsx",
+  "types": "lib/index.d.ts",
   "author": "Ahmet Baltaci <bilgi@ahmetbaltaci.com>",
   "license": "MIT",
   "files": [
