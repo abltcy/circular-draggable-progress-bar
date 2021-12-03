@@ -1,36 +1,24 @@
 {
   "name": "circular-draggable-progress-bar",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "",
   "homepage": "https://github.com/abltcy/circular-draggable-progress-bar#readme",
-  "main": "lib/index.tsx",
+  "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "author": "Ahmet Baltaci <bilgi@ahmetbaltaci.com>",
   "license": "MIT",
   "files": [
-    "android",
-    "ios",
-    "lib",
-    "circular-draggable-progress-bar.podspec",
-    "!android/build",
-    "!.DS_Store",
-    "!.gradle",
-    "!.idea",
-    "!build",
-    "!gradle",
-    "!*.iml",
-    "!gradlew",
-    "!gradlew.bat",
-    "!local.properties",
-    "!project.xcworkspace",
-    "!xcshareddata",
-    "!xcuserdata"
+    "lib"
   ],
   "scripts": {
     "compile": "rm -rf lib && tsc -p .",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "prepare": "yarn compile",
     "test": "jest"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "react-native-svg": "^12.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",

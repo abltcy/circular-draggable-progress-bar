@@ -1,11 +1,17 @@
 # circular-draggable-progress-bar
 
-##Installation
-###npm
+#Installation
+
+##Dependencies
+```bash
+npm install react-native-svg
+yarn add react-native-svg
+```
+##npm
 ```bash
 npm install circular-draggable-progress-bar
 ```
-###yarn
+##yarn
 ```bash
 yarn add circular-draggable-progress-bar
 ```
