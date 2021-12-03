@@ -9,6 +9,7 @@ npm install circular-draggable-progress-bar
 ```bash
 yarn add circular-draggable-progress-bar
 ```
+![alt text](https://github.com/abltcy/circular-draggable-progress-bar/blob/main/image.png?raw=true)
 
 ## Usage
 
